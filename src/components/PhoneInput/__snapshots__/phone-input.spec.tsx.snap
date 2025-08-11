@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given - PhoneInputStory component and without props should render correctly and match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#AAAAAA",
+        "borderRadius": 8,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "height": 45,
+        "justifyContent": "space-between",
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#EEEEEE",
+        "borderRadius": 8,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "height": 106.5,
+        "marginVertical": 14,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderBottomLeftRadius": 6,
+        "borderTopLeftRadius": 6,
+        "flexDirection": "row",
+        "height": "99.5%",
+        "justifyContent": "center",
+        "marginVertical": 0,
+        "opacity": 1,
+        "paddingHorizontal": 20,
+        "paddingLeft": 17,
+        "paddingRight": 0,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#FFFFFF",
+            "fontFamily": "TwemojiMozilla",
+            "fontSize": 20,
+            "marginRight": 10,
+          },
+          {
+            "gap": 0,
+            "margin": 0,
+            "marginRight": 0,
+            "padding": 0,
+            "paddingRight": 17,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        [
+          {
+            "color": "#0A0A0A",
+            "fontSize": 16,
+            "fontWeight": "500",
+          },
+          {
+            "color": "#1C1B1B",
+            "fontSize": 24,
+          },
+        ]
+      }
+    />
+  </View>
+  <TextInput
+    editable={true}
+    keyboardType="phone-pad"
+    onChangeText={[Function]}
+    placeholder="111 234 5678"
+    placeholderTextColor="#AAAAAA"
+    selectionColor="rgba(0 ,0 ,0 , .4)"
+    style={
+      [
+        {
+          "color": "#0A0A0A",
+          "fontSize": 16,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "width": 750,
+        },
+        {
+          "color": "#1C1B1B",
+        },
+      ]
+    }
+    value=""
+    verticalAlign="middle"
+  />
+</View>
+`;

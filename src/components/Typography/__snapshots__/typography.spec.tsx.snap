@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given - Typography component and props are: {"children":"This is a text","variant":"body1"} should render correctly and match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#1C1B1B",
+        "fontSize": 32,
+        "fontWeight": "normal",
+        "letterSpacing": 0.5,
+        "lineHeight": 44,
+      },
+      {},
+    ]
+  }
+>
+  This is a text
+</Text>
+`;
+
+exports[`Given - Typography component and props are: {"children":"This is a text","variant":"body2"} should render correctly and match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#1C1B1B",
+        "fontSize": 26,
+        "fontWeight": "normal",
+        "letterSpacing": 0.5,
+        "lineHeight": 44,
+      },
+      {},
+    ]
+  }
+>
+  This is a text
+</Text>
+`;
+
+exports[`Given - Typography component and props are: {"children":"This is a text","variant":"body3"} should render correctly and match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#1C1B1B",
+        "fontSize": 23,
+        "fontWeight": "normal",
+        "letterSpacing": 0.3,
+        "lineHeight": 36,
+      },
+      {},
+    ]
+  }
+>
+  This is a text
+</Text>
+`;
+
+exports[`Given - Typography component and props are: {"children":"This is a text","variant":"button"} should render correctly and match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#1C1B1B",
+        "fontSize": 26,
+        "fontWeight": "normal",
+        "lineHeight": 32,
+      },
+      {},
+    ]
+  }
+>
+  This is a text
+</Text>
+`;
+
+exports[`Given - Typography component and props are: {"children":"This is a text","variant":"caption1"} should render correctly and match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#3B3B3B",
+        "fontSize": 19,
+        "fontWeight": "normal",
+        "letterSpacing": 0.5,
+      },
+      {},
+    ]
+  }
+>
+  This is a text
+</Text>
+`;
+
+exports[`Given - Typography component and props are: {"children":"This is a text","variant":"heading1"} should render correctly and match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#1C1B1B",
+        "fontSize": 43,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "lineHeight": 55,
+        "verticalAlign": "middle",
+      },
+      {},
+    ]
+  }
+>
+  This is a text
+</Text>
+`;
+
+exports[`Given - Typography component and props are: {"children":"This is a text","variant":"heading2"} should render correctly and match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#1C1B1B",
+        "fontSize": 32,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "lineHeight": 41,
+        "verticalAlign": "middle",
+      },
+      {},
+    ]
+  }
+>
+  This is a text
+</Text>
+`;
+
+exports[`Given - Typography component and props are: {"children":"This is a text","variant":"heading3"} should render correctly and match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#1C1B1B",
+        "fontSize": 23,
+        "fontWeight": "bold",
+        "letterSpacing": 0.5,
+        "lineHeight": 32,
+        "verticalAlign": "middle",
+      },
+      {},
+    ]
+  }
+>
+  This is a text
+</Text>
+`;
