@@ -1,7 +1,7 @@
 import { TouchableOpacity, View } from 'react-native';
 import React, { useState } from 'react';
 
-import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome as FontAwesomeIcon } from '@expo/vector-icons';
 
 import useBlockBackPress from 'hooks/use-block-back-press';
 

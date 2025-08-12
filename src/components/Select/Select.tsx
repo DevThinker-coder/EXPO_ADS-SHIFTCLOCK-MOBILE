@@ -1,9 +1,8 @@
 import React, { useCallback, useMemo, useRef } from 'react';
 
-import type { PickerStyle } from 'react-native-picker-select';
-import RNPickerSelect from 'react-native-picker-select';
+import { Picker } from '@react-native-picker/picker';
 
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import EvilIcons from '@expo/vector-icons/EvilIcons';
 
 import { Platform, TouchableWithoutFeedback } from 'react-native';
 
@@ -15,12 +14,21 @@ import type { SelectComponent } from './select.types';
 
 const Select: SelectComponent = (props) => {
   const { style = {}, iconColor = Colors.gray, ...rest } = props;
-  const ref = useRef<RNPickerSelect>(null);
+  const ref = useRef(null);
+  const pickerRef = useRef();
+
+function open() {
+  pickerRef.current.focus();
+}
+
+function close() {
+  pickerRef.current.blur();
+}
 
   const ChevronIcon = useCallback(
     () => (
       <TouchableWithoutFeedback
-        onPress={() => ref.current?.togglePicker()}
+        onPress={() => {}}
         style={{
           display: Platform.select({ android: 'none', ios: 'flex' }),
         }}
@@ -54,9 +62,9 @@ const Select: SelectComponent = (props) => {
       inputAndroid: styles.inputAndroid,
       inputIOS: styles.inputIOS,
       inputIOSContainer: { paddingVertical: 0 },
-    } as PickerStyle;
+    };
 
-    (Object.keys(style) as Array<keyof PickerStyle>).forEach((key) => {
+    (Object.keys(style) as Array<keyof typeof defaultStyles>).forEach((key) => {
       defaultStyles[key] = {
         ...defaultStyles[key],
         ...style[key],
@@ -66,17 +74,15 @@ const Select: SelectComponent = (props) => {
   }, [style]);
 
   return (
-    <RNPickerSelect
+    <Picker
       {...rest}
       style={selectStyles}
-      onDownArrow={() => {
-        ref.current?.togglePicker();
-      }}
-      ref={ref}
-      useNativeAndroidPickerStyle={false}
+      ref={pickerRef}
       Icon={ChevronIcon}
+      onDownArrow={open}
+      onUpArrow={close}
     />
-  );
+  );  
 };
 
 export default Select;

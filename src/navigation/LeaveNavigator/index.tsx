@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import { TouchableWithoutFeedback, View } from 'react-native';
-import Feather from 'react-native-vector-icons/Feather';
+import { Feather } from '@expo/vector-icons';
 
 import type {
   LeaveNavigatorParamList,

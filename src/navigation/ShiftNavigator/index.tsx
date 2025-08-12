@@ -3,7 +3,7 @@ import { TouchableOpacity, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
-import Feather from 'react-native-vector-icons/Feather';
+import { Feather } from '@expo/vector-icons';
 
 import type {
   ScreenOptionsFn,

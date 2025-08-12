@@ -1,9 +1,7 @@
 import { ScrollView, View } from 'react-native';
 import React from 'react';
 
-import Feather from 'react-native-vector-icons/Feather';
-
-import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import { Feather, SimpleLineIcons } from '@expo/vector-icons';
 
 import Button from 'components/Button';
 

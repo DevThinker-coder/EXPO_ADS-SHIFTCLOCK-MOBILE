@@ -16,7 +16,7 @@ const Stack = createStackNavigator<DevNavigatorParamList>();
 
 const devNavigationRoutes = Object.entries(routes);
 
-const DevNavigator = (): JSX.Element => (
+const DevNavigator = (): React.JSX.Element => (
   <Stack.Navigator
     initialRouteName={SCREENS.DEV_MENU}
     screenOptions={{

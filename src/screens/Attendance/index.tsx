@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, View } from 'react-native';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 
 import BigButton from 'components/BigButton';
 import Typography from 'components/Typography';
