@@ -1,29 +1,9 @@
-import LocalesProvider from "context/locales";
-import useCurrentLocale from "hooks/use-current-locale";
-import { Provider } from "jotai";
-import Navigation from "navigation/index";
-import {  StatusBar, StyleSheet, Text, View } from "react-native";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import store from "store/index";
-
+import { StyleSheet, Text, View } from "react-native";
 function App() {
-  const { selectedLocale } = useCurrentLocale();
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-    <StatusBar
-      backgroundColor="transparent"
-      barStyle="dark-content"
-      translucent
-    />
-    <SafeAreaProvider>
-      <Provider store={store}>
-        <LocalesProvider defaultLocale="en" locale={selectedLocale}>
-          <Navigation />
-        </LocalesProvider>
-      </Provider>
-    </SafeAreaProvider>
-  </GestureHandlerRootView>
+    <View style={styles.container}>
+      <Text>Open up App.tsx to start working on your app!</Text>
+    </View>
   );
 }
 
