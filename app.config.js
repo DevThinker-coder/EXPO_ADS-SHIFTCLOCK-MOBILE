@@ -6,6 +6,7 @@ export default ({ config }) => ({
   orientation: "portrait",
   icon: "./assets/icon.png",
   newArchEnabled: true,
+  scheme: "ads-shiftclock-mobile",
   splash: {
     image: "./assets/splash.png",
     resizeMode: "contain",
