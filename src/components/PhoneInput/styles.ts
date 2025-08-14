@@ -8,12 +8,12 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
     borderWidth: 1,
     borderRadius: moderateScale(15),
-    marginVertical: Spacing.vertical.size4,
+    marginVertical: Spacing.vertical.size8,
     borderStyle: 'solid',
     borderColor: Colors.gray,
-    height: Dimensions.height.size7,
-    width:
-      Dimensions.width.size100 - Spacing.horizontal.globalHorizontalPadding * 2,
+    minHeight: moderateScale(55),
+    width: '100%',
+    paddingVertical: Spacing.vertical.size16,
   },
   flagContainer: {
     backgroundColor: Colors.white,

@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "expo start",
+    "sitemap": "npx expo-router-sitemap",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
