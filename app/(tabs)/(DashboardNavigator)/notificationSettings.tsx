@@ -7,6 +7,7 @@ import TickBlueIcon from 'assets/svgs/tick-blue.svg';
 import { moderateScale } from 'utils/styles';
 import { Colors, Dimensions, Layouts, Shadows, Spacing } from 'styles';
 import Select from 'components/Select';
+import DropdownPicker from 'components/DropdownPicker';
 
 
 
@@ -74,25 +75,6 @@ const NotificationSettings = () => {
       </View>
       <View style={styles.row}>
         <Typography variant="heading3">Allow Notifications</Typography>
-        <Select
-          style={{
-            viewContainer: styles.selectContainer,
-            inputAndroid: styles.selectInput,
-            inputIOS: styles.selectInput,
-            inputAndroidContainer: styles.selectInputAndroidContainer,
-            inputIOSContainer: styles.selectInputIOSContainer,
-          }}
-          iconColor={Colors.black}
-          items={[
-            {
-              label: 'Everyday',
-              value: 'everyday',
-              key: 'everyday',
-            },
-          ]}
-          value="everyday"
-          onValueChange={() => {}}
-        />
       </View>
       <View style={styles.row}>
         <Typography variant="heading3">Timing</Typography>
@@ -101,70 +83,6 @@ const NotificationSettings = () => {
             { flexDirection: 'row', gap: 10, justifyContent: 'flex-end' },
           ]}
         >
-          <Select
-            style={{
-              viewContainer: {
-                ...styles.selectContainer,
-              },
-              inputAndroid: { fontWeight: '400' },
-              inputIOS: { fontWeight: '400' },
-              inputAndroidContainer: {
-                ...styles.selectInputAndroidContainer,
-                paddingLeft: Spacing.horizontal.size8,
-                paddingRight: Spacing.horizontal.size20,
-              },
-              iconContainer: {
-                right: Platform.select({ android: 2, ios: -10 }),
-              },
-              inputIOSContainer: {
-                ...styles.selectInputIOSContainer,
-                paddingLeft: Spacing.horizontal.size12,
-                paddingRight: Spacing.horizontal.size12,
-              },
-            }}
-            iconColor={Colors.black}
-            items={[
-              {
-                label: '10:00 AM',
-                value: 10,
-                key: 10,
-              },
-            ]}
-            value={10}
-            onValueChange={() => {}}
-          />
-          <Select
-            style={{
-              viewContainer: {
-                ...styles.selectContainer,
-              },
-              inputAndroid: { fontWeight: '400' },
-              inputIOS: { fontWeight: '400' },
-              inputAndroidContainer: {
-                ...styles.selectInputAndroidContainer,
-                paddingLeft: Spacing.horizontal.size8,
-                paddingRight: Spacing.horizontal.size20,
-              },
-              iconContainer: {
-                right: Platform.select({ android: 2, ios: -10 }),
-              },
-              inputIOSContainer: {
-                ...styles.selectInputIOSContainer,
-                paddingLeft: Spacing.horizontal.size12,
-                paddingRight: Spacing.horizontal.size12,
-              },
-            }}
-            iconColor={Colors.black}
-            items={[
-              {
-                label: '9:00 PM',
-                value: 21,
-                key: 21,
-              },
-            ]}
-            value={21}
-            onValueChange={() => {}}
-          />
         </View>
       </View>
     </View>

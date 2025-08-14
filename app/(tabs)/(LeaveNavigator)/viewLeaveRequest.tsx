@@ -8,10 +8,8 @@ import { Colors, Dimensions, Spacing } from 'styles';
 import ApproveIcon from 'assets/svgs/approve.svg';
 import RejectIcon from 'assets/svgs/reject.svg';
 
-import Select from 'components/Select';
 import Typography from 'components/Typography';
 
-import type { SelectProps } from 'components/Select/select.types';
 
 import { images } from 'assets';
 
@@ -30,14 +28,6 @@ const timesData = Array(24)
 
 const ViewLeaveRequest = () => {
 
-  const selectStyles = {
-    viewContainer: styles.selectContainer,
-    inputAndroid: styles.selectInput,
-    inputIOS: styles.selectInput,
-    inputAndroidContainer: styles.selectInputAndroidContainer,
-    iconContainer: styles.selectIconContainer,
-    inputIOSContainer: styles.selectInputIOSContainer,
-  } satisfies SelectProps['style'];
 
   
   
@@ -125,24 +115,6 @@ const ViewLeaveRequest = () => {
 
       <View style={styles.timingsSection}>
         <Typography variant="heading3">Time</Typography>
-        <View style={styles.timingsContainer}>
-          <Select
-            style={selectStyles}
-            iconColor={Colors.black}
-            items={timesData}
-            value={10}
-            onValueChange={() => {}}
-            disabled
-          />
-          <Select
-            style={selectStyles}
-            iconColor={Colors.black}
-            items={timesData}
-            value={21}
-            onValueChange={() => {}}
-            disabled
-          />
-        </View>
       </View>
 
       <Input

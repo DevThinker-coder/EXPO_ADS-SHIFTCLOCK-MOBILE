@@ -16,8 +16,6 @@ import Input from 'components/Input';
 
 import Typography from 'components/Typography';
 import { Colors, Dimensions, Layouts, Spacing } from 'styles';
-import Select from 'components/Select';
-
 import UploadDocumentIcon from 'assets/svgs/upload-document.svg';
 import { moderateScale } from 'utils/styles';
 import Button from 'components/Button';
@@ -164,20 +162,6 @@ const ApplyLeave = () => {
       <View style={styles.timeRow}>
         <Typography variant="heading3">Time</Typography>
         <View style={styles.timeContainer}>
-          <Select
-            style={selectStyle}
-            iconColor={Colors.black}
-            items={selectTimeItems}
-            value={values.startTime}
-            onValueChange={(value:any) => handleChange('startTime')(value)}
-          />
-          <Select
-            style={selectStyle}
-            iconColor={Colors.black}
-            items={selectTimeItems}
-            value={values.endTime}
-            onValueChange={(value:any) => handleChange('endTime')(value)}
-          />
         </View>
       </View>
 
