@@ -2,9 +2,7 @@ import { Image, Platform, StyleSheet, View } from 'react-native';
 import React, { useRef, useState } from 'react';
 
 import SwiperFlatList from 'react-native-swiper-flatlist';
-
-import { SCREENS } from 'constants/screen-names';
-import { images } from 'assets';
+import images from 'images';
 
 import Typography from 'components/Typography';
 import Button from 'components/Button';

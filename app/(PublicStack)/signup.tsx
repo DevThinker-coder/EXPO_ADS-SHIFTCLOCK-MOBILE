@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import Button from 'components/Button';
 import useFormState from 'hooks/use-form-state';
-import LogoSvg from 'assets/svgs/logo.svg';
+import LogoSvg from 'svgs/logo.svg';
 
 import { router } from 'expo-router';
 import { Spacing, Dimensions, Colors } from 'styles';

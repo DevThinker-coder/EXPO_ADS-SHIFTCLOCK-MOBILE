@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Button from 'components/Button';
 
 import Typography from 'components/Typography';
-import { images } from 'assets';
+import  images  from 'images';
 
 
 import { router } from 'expo-router';

@@ -8,10 +8,10 @@ import useBlockBackPress from 'hooks/use-block-back-press';
 import Typography from 'components/Typography';
 import Input from 'components/Input';
 
-import UsernameIcon from 'assets/svgs/username.svg';
-import PasswordIcon from 'assets/svgs/password.svg';
-import PinPatternIcon from 'assets/svgs/pin-pattern.svg';
-import FaceIdIcon from 'assets/svgs/face-id.svg';
+import UsernameIcon from 'svgs/username.svg';
+import PasswordIcon from 'svgs/password.svg';
+import PinPatternIcon from 'svgs/pin-pattern.svg';
+import FaceIdIcon from 'svgs/face-id.svg';
 
 import { moderateScale } from 'utils/styles';
 import useFormState from 'hooks/use-form-state';

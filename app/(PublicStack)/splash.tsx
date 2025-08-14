@@ -4,7 +4,7 @@ import { Bar } from 'react-native-progress';
 
 import { useStore } from 'jotai';
 
-import { images } from 'assets';
+import images from 'images';
 import useProgress from 'hooks/use-progress';
 import { Colors, Dimensions, Layouts, Spacing } from 'styles';
 

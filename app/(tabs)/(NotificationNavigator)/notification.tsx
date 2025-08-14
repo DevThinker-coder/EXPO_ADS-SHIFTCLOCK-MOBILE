@@ -1,9 +1,8 @@
 import { View, SectionList, StyleSheet } from 'react-native';
-import CircleTickIcon from 'assets/svgs/circle-tick.svg';
 import Typography from 'components/Typography';
 import { moderateScale } from 'utils/styles';
 import { Colors, Dimensions, Layouts, Spacing } from 'styles/index';
-
+import CircleTickIcon from 'assets/svgs/circle-tick.svg';
 const sections = [
   {
     title: 'New',

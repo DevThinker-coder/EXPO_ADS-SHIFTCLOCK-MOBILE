@@ -4,10 +4,10 @@ import { FontAwesome } from '@expo/vector-icons';
 
 import BigButton from 'components/BigButton';
 import Typography from 'components/Typography';
-import { images } from 'assets';
-import MapsIcon from 'assets/svgs/maps.svg';
-import ClockoutIcon from 'assets/svgs/clockout.svg';
-import StartBreakIcon from 'assets/svgs/start-break.svg';
+import images from 'images';
+import MapsIcon from 'svgs/maps.svg';
+import ClockoutIcon from 'svgs/clockout.svg';
+import StartBreakIcon from 'svgs/start-break.svg';
 import { moderateScale } from 'utils/styles';
 
 import { Colors, Dimensions, Layouts, Spacing } from 'styles';
