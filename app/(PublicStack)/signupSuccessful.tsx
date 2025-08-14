@@ -32,7 +32,7 @@ const SignupSuccessful = () => {
         color="primary"
         title="GET STARTED"
         onPress={() => {
-          router.replace('dashboard');
+          router.replace('(tabs)/(DashboardNavigator)/dashboard');
         }}
       />
     </SafeAreaView>

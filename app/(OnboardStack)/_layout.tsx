@@ -3,14 +3,12 @@ import { Stack } from 'expo-router';
 const PublicStackLayout = () => {
   return (
       <Stack
-        initialRouteName="login"
+        initialRouteName="index"
         screenOptions={{ 
-          title: "Login",
+          title: "Onboarding",
         }} 
       >
-        <Stack.Screen name="login" />
-        <Stack.Screen name="signup" options={{ headerShown: false }} />
-        <Stack.Screen name="signupSuccessful" options={{ headerShown: false }} />
+        <Stack.Screen name="index" options={{ headerShown: false }} />
       </Stack>
   );
 };

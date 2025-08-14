@@ -13,6 +13,7 @@ import { Colors, Dimensions, Layouts, Spacing } from 'styles/index';
 
 import { useRouter } from 'expo-router';
 import { moderateScale } from 'utils/styles';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const screens = [
   {
@@ -44,9 +45,9 @@ const Onboarding = (props: any) => {
   const onNextPress = async () => {
     if (swipeIndex === screens.length - 1) {
       console.log("onNextPress")
-      // await Storage.set(ONBOARDING_COMPLETE, true);
+      await AsyncStorage.setItem(ONBOARDING_COMPLETE, "true");
       // return props.navigation.navigate(SCREENS.LOGIN);
-      router.replace('login'); 
+      router.replace('(PublicStack)/login'); 
     }
     return swiperRef.current?.scrollToIndex({ index: swipeIndex + 1 });
   };

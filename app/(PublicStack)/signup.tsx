@@ -8,7 +8,7 @@ import useFormState from 'hooks/use-form-state';
 import LogoSvg from 'svgs/logo.svg';
 
 import { router } from 'expo-router';
-import { Spacing, Dimensions, Colors } from 'styles';
+import { Spacing, Dimensions, Colors } from 'styles/index';
 import { moderateScale } from 'utils/styles';
 import DropdownPicker from 'components/DropdownPicker';
 
