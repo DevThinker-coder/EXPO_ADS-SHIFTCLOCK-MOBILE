@@ -5,7 +5,7 @@ import { atomWithStorage, createJSONStorage } from 'jotai/utils';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { ONBOARDING_COMPLETE } from 'constants/storage';
-import type { AllOptionalKeys } from 'types';
+import type { AllOptionalKeys } from 'types/index';
 
 export const isOnboardingCompleteAtom = atomWithStorage(
   ONBOARDING_COMPLETE,
