@@ -31,7 +31,7 @@ const Login = (props: any) => {
   const [showPassword, setShowPassword] = useState(true);
   const { values, handleChange } = useFormState({ username: '', password: '' });
 
-  // useBlockBackPress(props.navigation);
+  useBlockBackPress();
   return (
     <Auth
       title="Login to your account"
