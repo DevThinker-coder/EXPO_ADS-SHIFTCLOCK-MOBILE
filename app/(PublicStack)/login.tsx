@@ -20,7 +20,6 @@ import Button from 'components/Button';
 
 import Auth from 'containers/Auth';
 
-import { NAVIGATORS, SCREENS } from 'constants/screen-names';
 
 import { router } from 'expo-router';
 
