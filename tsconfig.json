@@ -11,7 +11,7 @@
       "components/*": ["./src/components/*"],
       "hooks/*": ["./src/hooks/*"],
       "containers/*": ["./src/containers/*"],
-      "styles": ["./src/styles/"],
+      "styles/*": ["./src/styles/*"],
       "utils/*": ["./src/utils/*"],
       "storybook/*": ["./storybook/*"],
       "types/*": ["./src/types/*"],

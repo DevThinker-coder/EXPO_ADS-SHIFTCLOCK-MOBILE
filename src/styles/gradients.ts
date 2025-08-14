@@ -1,8 +1,8 @@
-import { Colors } from 'styles';
+import { Colors } from 'styles/index';
 
 export default {
   white: {
     angle: 0,
-    colors: [Colors.grey, Colors.grey100],
+    colors: [Colors.gray, Colors.lighGray],
   },
 };

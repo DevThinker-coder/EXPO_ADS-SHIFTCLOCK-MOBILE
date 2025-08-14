@@ -10,8 +10,8 @@ import { router } from 'expo-router';
 
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { images } from 'assets';
-import { Colors, Dimensions, Spacing } from 'styles';
+import  images  from 'images';
+import { Colors, Dimensions, Spacing } from 'styles/index';
 import Overview from 'components/Overview';
 import StatsCard from 'components/StatsCard';
 

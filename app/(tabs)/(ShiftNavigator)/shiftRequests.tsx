@@ -6,7 +6,7 @@ import Tabs from 'components/Tabs';
 import statusTabs from 'constants/status-tabs';
 import RequestItem from 'components/RequestItem';
 import type { RequestItemProps } from 'components/RequestItem/request-item.types';
-import { images } from 'assets';
+import  images  from 'images';
 import { Colors, Spacing } from 'styles/index';
 import { router } from 'expo-router';
 

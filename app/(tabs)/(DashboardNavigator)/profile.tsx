@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { CameraType, launchCameraAsync, UIImagePickerPresentationStyle } from 'expo-image-picker';
 
-import { images } from 'assets';
+import  images  from 'images';
 
 import CameraIcon from 'assets/svgs/camera.svg';
 import UserIcon from 'assets/svgs/user.svg';
@@ -19,9 +19,9 @@ import LanguageIcon from 'assets/svgs/language.svg';
 import AboutUsIcon from 'assets/svgs/about-us.svg';
 import LogoutIcon from 'assets/svgs/logout.svg';
 
-import { Colors, Dimensions, Layouts, Spacing } from 'styles';
+import { Colors, Dimensions, Layouts, Spacing } from 'styles/index';
 
-import { SCREENS } from 'constants/screen-names';
+
 
 
 import { router } from 'expo-router';

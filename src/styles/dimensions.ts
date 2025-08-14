@@ -4,7 +4,7 @@ import {
   heightPercentageToDP as height,
 } from 'react-native-responsive-screen';
 
-import type { IntRange } from 'types';
+import type { IntRange } from 'types/index';
 
 const { width: screenWidth, height: screenHeight } =
   appDimensions.get('window');

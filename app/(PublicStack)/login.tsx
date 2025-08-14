@@ -15,7 +15,7 @@ import FaceIdIcon from 'svgs/face-id.svg';
 
 import { moderateScale } from 'utils/styles';
 import useFormState from 'hooks/use-form-state';
-import { Colors, Dimensions, Spacing } from 'styles';
+import { Colors, Dimensions, Spacing } from 'styles/index';
 import Button from 'components/Button';
 
 import Auth from 'containers/Auth';

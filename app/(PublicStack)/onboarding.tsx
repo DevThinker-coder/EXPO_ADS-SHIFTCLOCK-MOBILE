@@ -9,7 +9,7 @@ import Button from 'components/Button';
 import Storage from 'utils/storage';
 import { ONBOARDING_COMPLETE } from 'constants/storage';
 
-import { Colors, Dimensions, Layouts, Spacing } from 'styles';
+import { Colors, Dimensions, Layouts, Spacing } from 'styles/index';
 
 import { useRouter } from 'expo-router';
 import { moderateScale } from 'utils/styles';

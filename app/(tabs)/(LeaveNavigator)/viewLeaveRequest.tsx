@@ -4,14 +4,14 @@ import React from 'react';
 import Input from 'components/Input';
 import useFormState from 'hooks/use-form-state';
 import { moderateScale } from 'utils/styles';
-import { Colors, Dimensions, Spacing } from 'styles';
+import { Colors, Dimensions, Spacing } from 'styles/index';
 import ApproveIcon from 'assets/svgs/approve.svg';
 import RejectIcon from 'assets/svgs/reject.svg';
 
 import Typography from 'components/Typography';
 
 
-import { images } from 'assets';
+import  images  from 'images';
 
 import BigButton from 'components/BigButton';
 
