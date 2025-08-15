@@ -6,7 +6,6 @@ import images from 'images';
 
 import Typography from 'components/Typography';
 import Button from 'components/Button';
-import Storage from 'utils/storage';
 import { ONBOARDING_COMPLETE } from 'constants/storage';
 
 import { Colors, Dimensions, Layouts, Spacing } from 'styles/index';
