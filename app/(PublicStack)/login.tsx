@@ -1,5 +1,5 @@
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 import { FontAwesome as FontAwesomeIcon } from '@expo/vector-icons';
 
@@ -22,11 +22,13 @@ import Auth from 'containers/Auth';
 
 
 import { router } from 'expo-router';
+import { AuthContext } from 'utils/authContext';
 
 const iconSize = moderateScale(18);
 
-const Login = (props: any) => {
+const Login = () => {
   console.log("login")
+  const { logIn } = useContext(AuthContext)
   const [showPassword, setShowPassword] = useState(true);
   const { values, handleChange } = useFormState({ username: '', password: '' });
 
@@ -78,7 +80,8 @@ const Login = (props: any) => {
           style={{ button: styles.button }}
           onPress={() => {
             console.log("login router")
-            router.replace('dashboard');
+            logIn()
+            // router.replace('dashboard');
             // props.navigation.navigate(NAVIGATORS.CORE, {
             //   screen: NAVIGATORS.DASHBOARD,
             //   params: { screen: SCREENS.DASHBOARD },

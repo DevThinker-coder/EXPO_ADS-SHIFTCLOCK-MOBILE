@@ -1,17 +1,12 @@
-import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 import { Bar } from 'react-native-progress';
-
-import { useStore } from 'jotai';
-
 import images from 'images';
 import useProgress from 'hooks/use-progress';
 import { Colors, Dimensions, Layouts, Spacing } from 'styles/index';
 
 import {  useRouter } from 'expo-router';
 
-const Splash = ({ navigation }: any) => {
-  const store = useStore();
+const Splash = () => {
   const router = useRouter();
   const { progress } = useProgress({
     async onComplete() {

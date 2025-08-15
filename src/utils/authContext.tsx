@@ -25,8 +25,10 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
     const [isOnboarded, setIsOnboarded] = useState(false)
 
     const logIn = async () => {
+        console.log("logIn 1")
         await setItem(IS_LOGGED_IN, true)
         setIsLoggedIn(true)
+        router.replace('/(tabs)/(DashboardNavigator)/dashboard')
     }
 
     const logOut = async () => {
@@ -35,15 +37,17 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
     }
 
     const checkOnboarding = async () => {
-        const onboardingDone = await getItem(ONBOARDING_COMPLETE)
-        if (onboardingDone) setIsOnboarded(true)
-        else setIsOnboarded(false)
+        const isUserLoggedIn = await getItem(IS_LOGGED_IN)
+        const isUserOnboarded = await getItem(ONBOARDING_COMPLETE)
+        setIsLoggedIn(isUserLoggedIn == true ? true : false)
+        setIsOnboarded(isUserOnboarded == true ? true : false)
     }
 
     const handleOnboarding = async () => {
+        console.log("handleOnboarding 1")
         await setItem(ONBOARDING_COMPLETE, true)
         setIsOnboarded(true)
-        console.log("handleOnboarding")
+        console.log("handleOnboarding 2")
         router.replace('/(PublicStack)/login')
     }
 

@@ -1,18 +1,12 @@
 import { Image, Platform, StyleSheet, View } from 'react-native';
-import React, { useRef, useState } from 'react';
-
+import { useContext, useRef, useState } from 'react';
 import SwiperFlatList from 'react-native-swiper-flatlist';
 import images from 'images';
-
 import Typography from 'components/Typography';
 import Button from 'components/Button';
-import { ONBOARDING_COMPLETE } from 'constants/storage';
-
 import { Colors, Dimensions, Layouts, Spacing } from 'styles/index';
-
-import { useRouter } from 'expo-router';
 import { moderateScale } from 'utils/styles';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { AuthContext } from 'utils/authContext';
 
 const screens = [
   {
@@ -35,18 +29,17 @@ const screens = [
   },
 ];
 
-const Onboarding = (props: any) => {
-  const router = useRouter();
-  console.log('onboarding',props)
+const Onboarding = () => {
+  const { handleOnboarding } = useContext(AuthContext)
   const [swipeIndex, setSwipeIndex] = useState(0);
   const swiperRef = useRef<SwiperFlatList>(null);
 
-  const onNextPress = async () => {
+  const onNextPress = () => {
     if (swipeIndex === screens.length - 1) {
       console.log("onNextPress")
-      await AsyncStorage.setItem(ONBOARDING_COMPLETE, "true");
-      // return props.navigation.navigate(SCREENS.LOGIN);
-      router.replace('(PublicStack)/login'); 
+      handleOnboarding()
+      console.log("onNextPress 2")
+      return; // Exit early when on last screen
     }
     return swiperRef.current?.scrollToIndex({ index: swipeIndex + 1 });
   };
