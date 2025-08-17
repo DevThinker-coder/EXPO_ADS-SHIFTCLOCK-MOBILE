@@ -1,10 +1,4 @@
 {
   "name": "ADS-SHIFTCLOCK-MOBILE",
-  "slug": "ADS-SHIFTCLOCK-MOBILE",
-  "extra": {
-    "eas": {
-      "projectId": "8505fd72-3cb4-4455-806d-150750b6c4a4"
-    }
-  },
-  "owner": "camimkhan"
+  "slug": "ADS-SHIFTCLOCK-MOBILE"
 }

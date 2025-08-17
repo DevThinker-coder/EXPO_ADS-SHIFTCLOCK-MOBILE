@@ -20,7 +20,6 @@ export default ({ config }) => ({
     supportsTablet: true,
   },
   android: {
-    package: "com.yourcompany.adsshiftclockmobile",
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundColor: "#FFFFFF",
